@@ -9,8 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
+        customBackground: "#535F78",
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        sansita: ["Sansita", "ui-sans-serif", "system-ui"],
       },
     },
   },
