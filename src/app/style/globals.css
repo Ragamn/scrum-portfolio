@@ -22,7 +22,7 @@ body {
 
 @font-face {
   font-family: "Sansita";
-  src: url("/src/app/fonts/Sansita-Black.ttf") format("truetype");
+  src: url("/fonts/Sansita-Regular.ttf") format("truetype");
   font-weight: 700; /* フォントの太さに合わせて設定 */
   font-style: normal; /* 通常のスタイル */
 }
