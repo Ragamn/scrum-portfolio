@@ -1,11 +1,11 @@
 export default function Home() {
   return (
     <div>
-      <h1>RIKI TAKAHASHI</h1>
-      <p>ENGINIEER PORTFOLIO</p>
-      <h2>ABOUT ME</h2>
-      <h2>SKILL</h2>
-      <h2>PORTFOLIO</h2>
+      <h1 className="text-customtitle">RIKI TAKAHASHI</h1>
+      <p className="text-customtitle">ENGINIEER PORTFOLIO</p>
+      <h2 className="text-customtitle">ABOUT ME</h2>
+      <h2 className="text-customtitle">SKILL</h2>
+      <h2 className="text-customtitle">PORTFOLIO</h2>
     </div>
   );
 }
