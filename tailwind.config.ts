@@ -12,6 +12,8 @@ export default {
         customBackground: "#535F78",
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customtitle: "#F94A59",
+        customwhite: "#F9F9F9",
       },
       fontFamily: {
         sansita: ["Sansita", "ui-sans-serif", "system-ui"],
