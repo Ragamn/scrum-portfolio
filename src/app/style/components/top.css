@@ -6,3 +6,10 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.diagonal-center {
+  transform: rotate(-10deg);
+  margin-left: 25vw;
+  margin-top: 10vh;
+  font-size: 120px;
+}

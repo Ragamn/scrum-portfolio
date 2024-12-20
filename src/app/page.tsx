@@ -62,8 +62,12 @@ export default function Home() {
         className="overflow-x-scroll whitespace-nowrap no-scrollbar"
       >
         <div className="inline-block">
-          <h1 className="text-customtitle">RIKI TAKAHASHI</h1>
-          <p className="text-customtitle">ENGINEER PORTFOLIO</p>
+          <h1 className="text-customtitle title diagonal-center">
+            RIKI TAKAHASHI
+          </h1>
+          <p className="text-customtitle title diagonal-center">
+            ENGINEER PORTFOLIO
+          </p>
         </div>
         <div className="inline-block">
           <h2 className="text-customtitle">ABOUT ME</h2>
