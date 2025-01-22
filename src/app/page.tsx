@@ -55,22 +55,21 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative">
-      {/* 横スクロール可能なコンテナ */}
+    <div>
       <div
         ref={scrollContainerRef}
         className="overflow-x-scroll whitespace-nowrap no-scrollbar"
       >
         <div className="inline-block">
-          <h1 className="text-customtitle title diagonal-center">
+          <h1 className="text-customtitle title diagonal-center float-left">
             RIKI TAKAHASHI
           </h1>
-          <p className="text-customtitle title diagonal-center">
+          <p className="text-customtitle title diagonal-center float-left">
             ENGINEER PORTFOLIO
           </p>
         </div>
         <div className="inline-block">
-          <h2 className="text-customtitle">ABOUT ME</h2>
+          <h2 className="text-customtitle float-left">ABOUT ME</h2>
           <Image
             src="/image/dami.png"
             alt="Dami Image"
@@ -79,7 +78,7 @@ export default function Home() {
           />
         </div>
         <div className="inline-block">
-          <h2 className="text-customtitle">SKILL</h2>
+          <h2 className="text-customtitle float-left">SKILL</h2>
           <Image
             src="/image/dami.png"
             alt="Dami Image"
@@ -88,7 +87,7 @@ export default function Home() {
           />
         </div>
         <div className="inline-block">
-          <h2 className="text-customtitle">PORTFOLIO</h2>
+          <h2 className="text-customtitle float-left">PORTFOLIO</h2>
           <Image
             src="/image/dami.png"
             alt="Dami Image"
