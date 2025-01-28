@@ -61,15 +61,13 @@ export default function Home() {
         className="overflow-x-scroll whitespace-nowrap no-scrollbar"
       >
         <div className="inline-block">
-          <h1 className="text-customtitle title diagonal-center float-left">
-            RIKI TAKAHASHI
-          </h1>
-          <p className="text-customtitle title diagonal-center float-left">
+          <h1 className="text-customtitle diagonal-center">RIKI TAKAHASHI</h1>
+          <p className="text-customtitle float-left diagonal-center sub_title">
             ENGINEER PORTFOLIO
           </p>
         </div>
-        <div className="inline-block">
-          <h2 className="text-customtitle float-left">ABOUT ME</h2>
+        <div className="inline-block relative ml-40">
+          <h2 className="text-customtitle absolute">ABOUT ME</h2>
           <Image
             src="/image/dami.png"
             alt="Dami Image"
@@ -77,8 +75,8 @@ export default function Home() {
             height={390}
           />
         </div>
-        <div className="inline-block">
-          <h2 className="text-customtitle float-left">SKILL</h2>
+        <div className="inline-block relative ml-40">
+          <h2 className="text-customtitle absolute">SKILL</h2>
           <Image
             src="/image/dami.png"
             alt="Dami Image"
@@ -86,8 +84,8 @@ export default function Home() {
             height={390}
           />
         </div>
-        <div className="inline-block">
-          <h2 className="text-customtitle float-left">PORTFOLIO</h2>
+        <div className="inline-block relative ml-40">
+          <h2 className="text-customtitle absolute">PORTFOLIO</h2>
           <Image
             src="/image/dami.png"
             alt="Dami Image"
