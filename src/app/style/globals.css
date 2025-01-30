@@ -15,7 +15,6 @@
 }
 
 body {
-  padding-top: 40px;
   color: var(--foreground);
   background: var(--background);
   font-family: "Sansita", sans-serif;
