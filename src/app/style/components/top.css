@@ -3,6 +3,7 @@
 }
 
 .no-scrollbar {
+  height: 100vh;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -11,5 +12,23 @@
   transform: rotate(-10deg);
   margin-left: 25vw;
   margin-top: 10vh;
-  font-size: 120px;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 128px;
+}
+
+h2 {
+  font-size: 88px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.sub_title {
+  transform: rotate(-10deg);
+  margin-left: 40vw;
+  margin-top: 0px;
 }

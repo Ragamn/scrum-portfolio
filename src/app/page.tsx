@@ -55,41 +55,41 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative">
-      {/* 横スクロール可能なコンテナ */}
+    <div>
       <div
         ref={scrollContainerRef}
         className="overflow-x-scroll whitespace-nowrap no-scrollbar"
       >
         <div className="inline-block">
-          <h1 className="text-customtitle title diagonal-center">
-            RIKI TAKAHASHI
-          </h1>
-          <p className="text-customtitle title diagonal-center">
+          <h1 className="text-customtitle diagonal-center">RIKI TAKAHASHI</h1>
+          <p className="text-customtitle float-left diagonal-center sub_title">
             ENGINEER PORTFOLIO
           </p>
         </div>
-        <div className="inline-block">
-          <h2 className="text-customtitle">ABOUT ME</h2>
+        <div className="inline-block relative ml-40 mt-20">
+          <h2 className="text-customtitle absolute">ABOUT ME</h2>
           <Image
+            className="ml-24"
             src="/image/dami.png"
             alt="Dami Image"
             width={650}
             height={390}
           />
         </div>
-        <div className="inline-block">
-          <h2 className="text-customtitle">SKILL</h2>
+        <div className="inline-block relative ml-40">
+          <h2 className="text-customtitle absolute">SKILL</h2>
           <Image
+            className="ml-24"
             src="/image/dami.png"
             alt="Dami Image"
             width={650}
             height={390}
           />
         </div>
-        <div className="inline-block">
-          <h2 className="text-customtitle">PORTFOLIO</h2>
+        <div className="inline-block relative ml-40">
+          <h2 className="text-customtitle absolute">PORTFOLIO</h2>
           <Image
+            className="ml-24"
             src="/image/dami.png"
             alt="Dami Image"
             width={650}
