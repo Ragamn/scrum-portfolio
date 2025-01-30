@@ -66,9 +66,10 @@ export default function Home() {
             ENGINEER PORTFOLIO
           </p>
         </div>
-        <div className="inline-block relative ml-40">
+        <div className="inline-block relative ml-40 mt-20">
           <h2 className="text-customtitle absolute">ABOUT ME</h2>
           <Image
+            className="ml-24"
             src="/image/dami.png"
             alt="Dami Image"
             width={650}
@@ -78,6 +79,7 @@ export default function Home() {
         <div className="inline-block relative ml-40">
           <h2 className="text-customtitle absolute">SKILL</h2>
           <Image
+            className="ml-24"
             src="/image/dami.png"
             alt="Dami Image"
             width={650}
@@ -87,6 +89,7 @@ export default function Home() {
         <div className="inline-block relative ml-40">
           <h2 className="text-customtitle absolute">PORTFOLIO</h2>
           <Image
+            className="ml-24"
             src="/image/dami.png"
             alt="Dami Image"
             width={650}
