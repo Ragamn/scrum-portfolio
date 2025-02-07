@@ -14,6 +14,13 @@ export default {
         foreground: "var(--foreground)",
         customtitle: "#F94A59",
         customwhite: "#F9F9F9",
+        custommenu: "#2F2C2A",
+        custommenutop: "#FFFFFF",
+        squarecolor1: "#648EEE",
+        squarecolor2: "#FF3E00",
+        squarecolor3: "#77D8D6",
+        squarecolor4: "#BA85D6",
+        squarecolor5: "#F5EB00",
       },
       fontFamily: {
         sansita: ["Sansita", "ui-sans-serif", "system-ui"],
