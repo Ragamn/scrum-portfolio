@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import "./style/components/top.css";
@@ -59,6 +59,7 @@ export default function Home() {
       <div
         ref={scrollContainerRef}
         className="overflow-x-scroll whitespace-nowrap no-scrollbar"
+        data-testid="scroll-container"
       >
         <div className="inline-block">
           <h1 className="text-customtitle diagonal-center">RIKI TAKAHASHI</h1>
@@ -103,6 +104,7 @@ export default function Home() {
         <div
           className="h-full bg-white transition-all duration-300"
           style={{ width: `${scrollProgress}%` }}
+          data-testid="progress-bar"
         ></div>
       </div>
     </div>
