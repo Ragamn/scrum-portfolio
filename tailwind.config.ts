@@ -12,6 +12,7 @@ export default {
         customBackground: "#535F78",
         background: "var(--background)",
         foreground: "var(--foreground)",
+        popupcolor: "#FCFAF2",
         customtitle: "#F94A59",
         customwhite: "#F9F9F9",
         custommenu: "#2F2C2A",
