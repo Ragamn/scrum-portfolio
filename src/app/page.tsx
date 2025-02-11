@@ -61,11 +61,11 @@ export default function Home() {
         className="overflow-x-scroll whitespace-nowrap no-scrollbar"
         data-testid="scroll-container"
       >
-        <div className="inline-block">
-          <h1 className="text-customtitle diagonal-center">RIKI TAKAHASHI</h1>
-          <p className="text-customtitle float-left diagonal-center sub_title">
-            ENGINEER PORTFOLIO
-          </p>
+        <div className="inline-block relative float-left ">
+          <div className="text-center top-title">
+            <h1 className="text-customtitle diagonal-center">RIKI TAKAHASHI</h1>
+            <p className="text-customtitle sub_title">ENGINEER PORTFOLIO</p>
+          </div>
         </div>
         <div className="inline-block relative ml-40 mt-20">
           <h2 className="text-customtitle absolute">ABOUT ME</h2>
