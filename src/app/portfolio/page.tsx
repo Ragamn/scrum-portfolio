@@ -65,7 +65,7 @@ export default function RotatingShapes() {
       {currentShapes.map((item, index) => (
         <motion.div
           key={item.id}
-          className={`absolute w-72 h-72 flex justify-center items-center ${item.color}`}
+          className={`absolute w-[20vw] h-[20vw] flex justify-center items-center ${item.color}`}
           style={{
             padding: item.shape === "square" ? "0" : "",
             opacity: 0.9, // 透けるようにする
