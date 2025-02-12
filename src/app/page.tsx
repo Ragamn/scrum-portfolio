@@ -1,12 +1,13 @@
 "use client";
-import React from "react";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import "./style/components/top.css";
 
 export default function Home() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const router = useRouter();
 
   // ホイールイベントによる横スクロール処理
   useEffect(() => {
@@ -43,16 +44,19 @@ export default function Home() {
       }
     };
 
-    console.log("イベントリスナーを追加");
     window.addEventListener("wheel", handleWheel, { passive: false });
-    window.addEventListener("resize", updateProgressBar); // リサイズ時も進捗を更新
+    window.addEventListener("resize", updateProgressBar);
 
     return () => {
-      console.log("イベントリスナーを削除");
       window.removeEventListener("wheel", handleWheel);
       window.removeEventListener("resize", updateProgressBar);
     };
   }, []);
+
+  // ページ遷移の関数
+  const navigateTo = (path: string) => {
+    router.push(path);
+  };
 
   return (
     <div>
@@ -67,31 +71,43 @@ export default function Home() {
             <p className="text-customtitle sub_title">ENGINEER PORTFOLIO</p>
           </div>
         </div>
-        <div className="inline-block relative ml-40 mt-20">
+
+        <div
+          className="inline-block relative ml-40 mt-20 cursor-pointer"
+          onClick={() => navigateTo("/about")}
+        >
           <h2 className="text-customtitle absolute">ABOUT ME</h2>
           <Image
             className="ml-24"
-            src="/image/dami.png"
+            src="/image/aboutme.jpg"
             alt="Dami Image"
             width={650}
             height={390}
           />
         </div>
-        <div className="inline-block relative ml-40">
+
+        <div
+          className="inline-block relative ml-40 cursor-pointer"
+          onClick={() => navigateTo("/skills")}
+        >
           <h2 className="text-customtitle absolute">SKILL</h2>
           <Image
             className="ml-24"
-            src="/image/dami.png"
+            src="/image/skill.png"
             alt="Dami Image"
             width={650}
             height={390}
           />
         </div>
-        <div className="inline-block relative ml-40">
+
+        <div
+          className="inline-block relative ml-40 cursor-pointer"
+          onClick={() => navigateTo("/portfolio")}
+        >
           <h2 className="text-customtitle absolute">PORTFOLIO</h2>
           <Image
             className="ml-24"
-            src="/image/dami.png"
+            src="/image/portfolio.jpg"
             alt="Dami Image"
             width={650}
             height={390}
