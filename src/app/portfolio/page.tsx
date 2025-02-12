@@ -8,7 +8,7 @@ const works = [
     id: 1,
     title: "備品管理システム",
     description:
-      "備品を管理するためのアプリです。機能は、備品の貸出、返却、棚卸など備品を管理するための機能が実装されています。また、貸出、返却の申請がGooglechatに送信されます。",
+      "備品を管理するためのアプリです。備品を管理するための機能が実装されています。また、貸出、返却の申請がGooglechatに送信されます。",
     url: "https://equipment-management-jet.vercel.app/user_login",
     languages: "Python Django, REST framework, React",
     images: [
