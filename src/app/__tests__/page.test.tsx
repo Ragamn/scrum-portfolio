@@ -4,6 +4,7 @@ import Home from "../page";
 import PortfolioPage from "../portfolio/page";
 import AboutMe from "../about/page";
 import "@testing-library/jest-dom";
+import SkillSection from "../components/skillsection";
 
 describe("Home component", () => {
   test("renders scroll container", () => {
@@ -68,5 +69,48 @@ describe("About me component", () => {
     render(<AboutMe />);
     const images = screen.getAllByRole("img");
     expect(images.length).toBe(4);
+  });
+});
+
+describe("SkillSection component", () => {
+  test("renders skill categories", () => {
+    render(<SkillSection />);
+    const categories = ["FRONT-END", "BACK-END", "FRAME WORK", "DATABASE"];
+    categories.forEach((category) => {
+      const categoryElement = screen.getByText(category);
+      expect(categoryElement).toBeInTheDocument();
+    });
+  });
+
+  test("renders skills", () => {
+    render(<SkillSection />);
+    const skills = [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "PHP",
+      "Java",
+      "Next.js",
+      "React",
+      "Django",
+      "Laravel",
+      "PostgreSQL",
+      "MySQL",
+    ];
+    skills.forEach((skill) => {
+      const skillElement = screen.getByText(skill);
+      expect(skillElement).toBeInTheDocument();
+    });
+  });
+
+  test("renders qualifications", () => {
+    render(<SkillSection />);
+    const qualifications = ["基本情報技術者試験", "ITパスポート試験"];
+    qualifications.forEach((qualification) => {
+      const qualificationElement = screen.getByText(qualification);
+      expect(qualificationElement).toBeInTheDocument();
+    });
   });
 });
