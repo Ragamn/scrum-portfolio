@@ -1,6 +1,7 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import Home from "../page";
+import PortfolioPage from "../portfolio/page";
 import "@testing-library/jest-dom";
 
 describe("Home component", () => {
@@ -26,5 +27,21 @@ describe("Home component", () => {
     expect(aboutMe).toBeInTheDocument();
     expect(skill).toBeInTheDocument();
     expect(portfolio).toBeInTheDocument();
+  });
+});
+
+describe("PortfolioPage component", () => {
+  test("renders works section", () => {
+    render(<PortfolioPage />);
+    const worksSection = screen.getByText("Works");
+    expect(worksSection).toBeInTheDocument();
+  });
+
+  test("renders work items", () => {
+    render(<PortfolioPage />);
+    const workItems = screen.getAllByText(
+      /備品管理システム|レシピシェアアプリ|注文管理アプリ/
+    );
+    expect(workItems.length).toBe(3);
   });
 });
