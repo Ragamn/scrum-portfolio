@@ -41,7 +41,7 @@ export default function PortfolioPage() {
                 img: "/image/IT.png",
               },
               {
-                year: "2022年（令和4年）0月",
+                year: "2022年（令和4年）",
                 description:
                   "MCL盛岡情報ビジネス&デザイン専門学校に入学。基本情報技術者試験合格",
                 img: "/image/dev.jpg",
