@@ -15,7 +15,7 @@ export default function PortfolioPage() {
           <div className="relative bg-gray-800 py-28">
             <h2 className="text-4xl font-bold text-customtitle">ABOUT ME</h2>
             <p className="max-w-2xl mx-auto mt-5">
-              このページでは、私のこれまでの歩みを年表形式でご紹介しています。どんな経験をして、どんなことを学んできたのか、私のバックグラウンドをざっと知っていただけます。
+              このページでは、私のこれまでの歩みを年表形式で紹介しています。どんな経験をして、どんなことを学んできたのか、私のバックグラウンドをざっと知っていただけます。
             </p>
           </div>
         </section>
