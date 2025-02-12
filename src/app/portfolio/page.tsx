@@ -109,7 +109,7 @@ export default function PortfolioPage() {
       {selectedWork && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
           <div
-            className="bg-popupcolor p-8 rounded-lg w-[60%] h-[70%] flex flex-col relative text-lg"
+            className="bg-popupcolor p-8 rounded-lg w-[60%] h-[75%] flex flex-col relative text-lg"
             onClick={(e) => e.stopPropagation()}
           >
             {/* 閉じるボタン */}
